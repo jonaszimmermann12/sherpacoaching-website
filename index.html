@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sherpacoaching — Organisationsentwicklung für den Mittelstand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; -webkit-text-size-adjust: 100%; }
+    body { margin: 0; background: #F5F2EC; }
+    * { box-sizing: border-box; }
+    a { color: #16150F; text-decoration: none; }
+    a:hover { color: #C0451B; }
+    ::selection { background: #C0451B; color: #F5F2EC; }
+    @keyframes riseIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body>
+<div style="background:#F5F2EC;color:#16150F;font-family:Newsreader,Georgia,serif;min-height:100vh;overflow-x:hidden">
+
+  <header style="position:sticky;top:0;z-index:50;background:rgba(245,242,236,.86);backdrop-filter:blur(12px);border-bottom:1px solid rgba(22,21,15,.14)">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,56px);height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <a href="#top" style="display:flex;align-items:center;gap:10px;font:700 13px/1 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase"><img src="assets/sherpa-mark.png" alt="" style="width:28px;height:28px;object-fit:contain" />sherpacoaching</a>
+      <nav id="mainNav" style="display:flex;align-items:center;gap:clamp(14px,2.4vw,30px)">
+        <a href="#angebot" data-spy="angebot" style="font:500 12px/1 'JetBrains Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#4A4740">Angebot</a>
+        <a href="#methode" data-spy="methode" style="font:500 12px/1 'JetBrains Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#4A4740">Methode</a>
+        <a href="#beweis" data-spy="beweis" style="font:500 12px/1 'JetBrains Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#4A4740">Beweis</a>
+        <a href="#ueber" data-spy="ueber" style="font:500 12px/1 'JetBrains Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#4A4740">Über mich</a>
+        <a href="#kontakt" style="font:700 12px/1 'JetBrains Mono',monospace;letter-spacing:.1em;text-transform:uppercase;background:#16150F;color:#F5F2EC;padding:13px 18px;border-radius:2px" style-hover="background:#C0451B;color:#F5F2EC">Erstgespräch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 02 HERO -->
+    <section style="position:relative;min-height:clamp(640px,92vh,1040px);display:flex;align-items:flex-end;overflow:hidden">
+      <div style="position:absolute;inset:0;z-index:0">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=2400&q=85&auto=format&fit=crop" alt="" style="width:100%;height:100%;object-fit:cover" />
+      </div>
+      <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(15,14,10,.55) 0%,rgba(15,14,10,.18) 32%,rgba(15,14,10,.12) 55%,rgba(15,14,10,.72) 100%)"></div>
+      <div style="position:relative;z-index:2;max-width:1180px;width:100%;margin:0 auto;padding:clamp(48px,8vw,88px) clamp(20px,5vw,56px) clamp(56px,7vw,88px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(32px,5vw,72px);align-items:end">
+        <div style="animation:riseIn .7s cubic-bezier(.2,.7,.2,1) both">
+          <p style="margin:0 0 clamp(20px,3vw,34px);font:500 12px/1.4 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#E5852F">Organisationsentwicklung für den Mittelstand</p>
+          <h1 style="margin:0;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(40px,6.4vw,84px);line-height:.97;letter-spacing:-.035em;text-wrap:balance;color:#F5F2EC">Beschleunige deine KI-Transformation.</h1>
+          <p style="margin:clamp(18px,2.4vw,28px) 0 0;font:400 clamp(21px,2.5vw,30px)/1.25 Newsreader,serif;color:#F5F2EC"><span style="box-shadow:inset 0 -.36em 0 rgba(229,133,47,.4)">Battlescars statt Consultant Slop.</span></p>
+          <p style="margin:clamp(24px,3vw,36px) 0 0;max-width:46ch;font:400 clamp(17px,1.5vw,19px)/1.62 Newsreader,serif;color:#DDD8CE">Die KI-Welle rollt — die Frage ist, ob ihr vor ihr seid oder unter ihr. Drei Sprints, zwölf Wochen, ein klares Bild: was bei euch wirklich geht und was nicht.</p>
+          <div style="margin-top:clamp(28px,3.6vw,42px);display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px">
+            <a href="#kontakt" style="font:700 13px/1 'JetBrains Mono',monospace;letter-spacing:.1em;text-transform:uppercase;background:#C0451B;color:#F5F2EC;padding:19px 26px;border-radius:2px" style-hover="background:#F5F2EC;color:#16150F">Jetzt vor die Welle kommen</a>
+            
+              <a href="#methode" style="font:500 13px/1 'JetBrains Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#F5F2EC;border-bottom:1px solid rgba(245,242,236,.45);padding-bottom:5px" style-hover="color:#E5852F;border-bottom-color:#E5852F">Methode ansehen →</a>
+            
+          </div>
+        </div>
+
+        <aside style="border:1px solid rgba(245,242,236,.18);background:rgba(16,15,10,.55);backdrop-filter:blur(10px);padding:clamp(22px,2.4vw,30px);animation:riseIn .7s .12s cubic-bezier(.2,.7,.2,1) both">
+          <p style="margin:0 0 22px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#C9C4B9">Wie ich arbeite</p>
+          <div style="display:grid;gap:18px">
+            <div style="display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:start">
+              <span style="font:700 30px/.9 'JetBrains Mono',monospace;color:#E5852F">12</span>
+              <p style="margin:0;font:400 16px/1.5 Newsreader,serif;color:#F1EEE7">Wochen, vom Erstgespräch bis zum verankerten Roll-out.</p>
+            </div>
+            <div style="height:1px;background:rgba(245,242,236,.16)"></div>
+            <div style="display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:start">
+              <span style="font:700 30px/.9 'JetBrains Mono',monospace;color:#E5852F">03</span>
+              <p style="margin:0;font:400 16px/1.5 Newsreader,serif;color:#F1EEE7">Sprints: Engpass-Diagnose, Pilot, Verankerung.</p>
+            </div>
+            <div style="height:1px;background:rgba(245,242,236,.16)"></div>
+            <div style="display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:start">
+              <span style="font:700 30px/.9 'JetBrains Mono',monospace;color:#E5852F">01</span>
+              <p style="margin:0;font:400 16px/1.5 Newsreader,serif;color:#F1EEE7">Sherpa. Solo-Praxis. Remote aus Berlin, vor Ort im DACH-Raum.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 03 WIEDERERKENNUNG -->
+    <section id="erkennen" style="border-top:1px solid rgba(22,21,15,.14);background:#EFEBE3">
+      <div style="max-width:1180px;margin:0 auto;padding:clamp(56px,7vw,88px) clamp(20px,5vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(24px,4vw,64px)">
+        <h2 style="margin:0;font-family:Archivo,sans-serif;font-weight:600;font-size:clamp(26px,3vw,38px);line-height:1.05;letter-spacing:-.025em">Kennt ihr das?</h2>
+        <div>
+          <p style="margin:0;padding-bottom:16px;border-bottom:1px solid rgba(22,21,15,.14);font:400 clamp(19px,2vw,24px)/1.4 Newsreader,serif;color:#16150F">Zehn Initiativen gleichzeitig, keine kommt voran.</p>
+          <p style="margin:0;padding:16px 0;border-bottom:1px solid rgba(22,21,15,.14);font:400 clamp(19px,2vw,24px)/1.4 Newsreader,serif;color:#16150F">Monate Analyse, keine Entscheidung.</p>
+          <p style="margin:0;padding:16px 0;border-bottom:1px solid rgba(22,21,15,.14);font:400 clamp(19px,2vw,24px)/1.4 Newsreader,serif;color:#16150F">Echte Aufbruchsenergie im Team — die ohne Ziel verpufft.</p>
+          <p style="margin:22px 0 0;font-family:Archivo,sans-serif;font-weight:600;font-size:clamp(19px,2vw,24px);line-height:1.3;letter-spacing:-.02em;color:#C0451B">Genau da fange ich an.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 BEWEIS -->
+    <section id="beweis" style="border-top:1px solid rgba(22,21,15,.14)">
+      <div style="max-width:1180px;margin:0 auto;padding:clamp(64px,9vw,120px) clamp(20px,5vw,56px)">
+        
+          <p style="margin:0 0 clamp(18px,2.4vw,28px);font:500 12px/1.4 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#6B675D">Case · Unite, Leipzig · 2025–2026</p>
+        
+        
+        <h2 style="margin:0;max-width:20ch;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(30px,4.4vw,60px);line-height:1.02;letter-spacing:-.03em;text-wrap:balance">Aus zehn Experimenten wurde eine gesteuerte Pipeline.</h2>
+
+        <div style="margin-top:clamp(36px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:rgba(22,21,15,.14);border:1px solid rgba(22,21,15,.14)">
+          <div style="background:#F5F2EC;padding:clamp(22px,2.6vw,30px)">
+            
+              <p style="margin:0;font:700 clamp(38px,5vw,58px)/.9 'JetBrains Mono',monospace;letter-spacing:-.04em;color:#C0451B">–87&thinsp;%</p>
+            
+            
+            <p style="margin:14px 0 0;font:400 16px/1.5 Newsreader,serif;color:#33302A">Vertriebsvorbereitung — von 2 Stunden auf 15 Minuten pro Kundengespräch</p>
+          </div>
+          <div style="background:#F5F2EC;padding:clamp(22px,2.6vw,30px)">
+            <p style="margin:0;font:700 clamp(38px,5vw,58px)/.9 'JetBrains Mono',monospace;letter-spacing:-.04em;color:#C0451B">10+</p>
+            <p style="margin:14px 0 0;font:400 16px/1.5 Newsreader,serif;color:#33302A">KI-Initiativen in einer priorisierten Pipeline statt als lose Einzelaktionen</p>
+          </div>
+          <div style="background:#F5F2EC;padding:clamp(22px,2.6vw,30px)">
+            <p style="margin:0;font:700 clamp(38px,5vw,58px)/.9 'JetBrains Mono',monospace;letter-spacing:-.04em;color:#C0451B">30</p>
+            <p style="margin:14px 0 0;font:400 16px/1.5 Newsreader,serif;color:#33302A">Sales-Kollegen im Test, Vorstandsbeauftragung erteilt</p>
+          </div>
+        </div>
+
+        <div style="margin-top:clamp(32px,4vw,54px);display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(20px,3vw,44px)">
+          <p style="margin:0;font:400 17px/1.62 Newsreader,serif;color:#33302A">Das Unternehmen stand dort, wo viele Mittelständler heute stehen: KI-Tools waren da, einzelne Kollegen experimentierten, aber nichts machte aus Experimenten Projekte. Ideen versandeten, Fachbereiche bauten unwissentlich dieselbe Lösung zweimal, und niemand konnte sagen, was Priorität hat.</p>
+          <p style="margin:0;font:400 17px/1.62 Newsreader,serif;color:#33302A">Ich habe nicht Use Cases abgearbeitet, sondern ein System gebaut: ein Entscheidungsgremium für Tools, Richtlinien und EU AI Act. Einen schlanken Auftragsklärungsprozess mit zwei Prinzipien — kein Auftrag ohne Ticket, Sparring vor Commitment. Und ein Netzwerk von Ambassadors in allen Bereichen, das Use Cases und Feedback zurück in die Steuerung trägt.</p>
+          <p style="margin:0;font:400 17px/1.62 Newsreader,serif;color:#33302A">Der AI Sales Agent lief am Ende produktiv. Wichtiger war, was daneben entstand: eine Struktur, die weiterläuft.</p>
+        </div>
+
+        <blockquote style="margin:clamp(36px,5vw,64px) 0 0;padding:clamp(28px,4vw,44px) 0;border-top:1px solid rgba(22,21,15,.14);border-bottom:1px solid rgba(22,21,15,.14)">
+          <p style="margin:0;max-width:34ch;font:400 clamp(21px,2.6vw,34px)/1.28 Newsreader,serif;letter-spacing:-.01em;color:#16150F">„Der eigentliche Beweis, dass das System steht: Als ich in Elternzeit ging, liefen Governance, Ambassador-Netzwerk und alle Projekte mit dokumentierten Ownern nahtlos weiter.“</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- 05 ANGEBOT -->
+    <section id="angebot" style="border-top:1px solid rgba(22,21,15,.14);background:#EFEBE3">
+      <div style="max-width:1180px;margin:0 auto;padding:clamp(64px,9vw,120px) clamp(20px,5vw,56px)">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(24px,4vw,64px);align-items:end">
+          <div>
+            <p style="margin:0 0 18px;font:500 12px/1.4 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#6B675D">Angebot · Vier Säulen</p>
+            <h2 style="margin:0;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(32px,4.6vw,62px);line-height:1;letter-spacing:-.035em">Erst der Prozess.<br />Dann KI.</h2>
+          </div>
+          <p style="margin:0;max-width:44ch;font:400 17px/1.62 Newsreader,serif;color:#33302A">Kaputte Prozesse mit KI zu belegen macht sie nicht besser. Es friert das Chaos ein und beschleunigt es. Deshalb fange ich da an, wo es sich später rechnet — und nicht bei den Tools.</p>
+        </div>
+
+        <!-- Säule 1 -->
+        <article style="margin-top:clamp(40px,5vw,72px);border-top:1px solid rgba(22,21,15,.2);padding-top:clamp(28px,3.4vw,44px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,4vw,56px)">
+          <div>
+            <p style="margin:0 0 12px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#C0451B">Säule 01</p>
+            <h3 style="margin:0;font-family:Archivo,sans-serif;font-weight:600;font-size:clamp(26px,3vw,38px);line-height:1.05;letter-spacing:-.03em">North Star</h3>
+            <div style="margin-top:22px;display:grid;gap:14px">
+              <div>
+                <p style="margin:0 0 4px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Dauer</p>
+                <p style="margin:0;font:400 16px/1.5 Newsreader,serif;color:#33302A">1 Tag vor Ort, plus Auswertung</p>
+              </div>
+              <div>
+                <p style="margin:0 0 4px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Preis</p>
+                <p style="margin:0;display:flex;align-items:center;gap:10px;flex-wrap:wrap;font:400 16px/1.5 Newsreader,serif;color:#33302A">Festpreis, auf Anfrage
+                  <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:.1em;color:#C0451B;border:1px solid rgba(192,69,27,.45);padding:4px 6px">OFFEN</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div style="display:grid;gap:22px">
+            <p style="margin:0;font:500 clamp(19px,2vw,23px)/1.35 Newsreader,serif;color:#16150F">Danach wisst ihr, an welcher Stelle im Betrieb KI bei euch tatsächlich Geld bringt.</p>
+            <div>
+              <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Auslöser</p>
+              <p style="margin:0;font:400 17px/1.6 Newsreader,serif;color:#33302A">Wenn ihr mit KI anfangen wollt, aber nicht wisst, wo.</p>
+            </div>
+            <div>
+              <p style="margin:0 0 10px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Was auf dem Tisch liegt</p>
+              <ul style="margin:0;padding:0;list-style:none;display:grid;gap:8px">
+                <li style="display:grid;grid-template-columns:26px 1fr;gap:8px;font:400 17px/1.6 Newsreader,serif;color:#33302A"><span style="font:400 12px/1.9 'JetBrains Mono',monospace;color:#C0451B">01</span>Eine Landkarte eurer Engpässe, nach Wirkung sortiert</li>
+                <li style="display:grid;grid-template-columns:26px 1fr;gap:8px;font:400 17px/1.6 Newsreader,serif;color:#33302A"><span style="font:400 12px/1.9 'JetBrains Mono',monospace;color:#C0451B">02</span>Drei bewertete Kandidaten für den ersten Anwendungsfall</li>
+                <li style="display:grid;grid-template-columns:26px 1fr;gap:8px;font:400 17px/1.6 Newsreader,serif;color:#33302A"><span style="font:400 12px/1.9 'JetBrains Mono',monospace;color:#C0451B">03</span>Eine begründete Empfehlung, mit welchem ihr anfangt</li>
+              </ul>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;border-top:1px solid rgba(22,21,15,.14);padding-top:18px">
+              <div>
+                <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Euer Aufwand</p>
+                <p style="margin:0;font:400 16px/1.55 Newsreader,serif;color:#33302A">Ein Tag mit den Leuten, die die Arbeit wirklich machen. Vorbereitung: keine.</p>
+              </div>
+              <div>
+                <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Nicht drin</p>
+                <p style="margin:0;font:400 16px/1.55 Newsreader,serif;color:#33302A">Keine Toolauswahl, keine Implementierung.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Säule 2 -->
+        <article style="margin-top:clamp(32px,4vw,56px);border-top:1px solid rgba(22,21,15,.2);padding-top:clamp(28px,3.4vw,44px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,4vw,56px)">
+          <div>
+            <p style="margin:0 0 12px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#C0451B">Säule 02</p>
+            <h3 style="margin:0;font-family:Archivo,sans-serif;font-weight:600;font-size:clamp(26px,3vw,38px);line-height:1.05;letter-spacing:-.03em">The Process</h3>
+            <div style="margin-top:22px;display:grid;gap:14px">
+              <div>
+                <p style="margin:0 0 4px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Dauer</p>
+                <p style="margin:0;font:400 16px/1.5 Newsreader,serif;color:#33302A">rund 3 Wochen, davon 1 Workshop-Tag</p>
+              </div>
+              <div>
+                <p style="margin:0 0 4px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Preis</p>
+                <p style="margin:0;font:400 16px/1.5 Newsreader,serif;color:#33302A">Festpreis, Größenordnung 6.000 €</p>
+              </div>
+              <div>
+                <p style="margin:0 0 4px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Garantie</p>
+                <p style="margin:0;font:400 16px/1.5 Newsreader,serif;color:#33302A">Sagt der Umsetzungspartner, dieser Soll-Prozess ist nicht implementierbar, arbeite ich kostenlos nach.
+                  <span style="display:inline-block;margin-left:8px;font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:.1em;color:#C0451B;border:1px solid rgba(192,69,27,.45);padding:4px 6px">OFFEN</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div style="display:grid;gap:22px">
+            <p style="margin:0;font:500 clamp(19px,2vw,23px)/1.35 Newsreader,serif;color:#16150F">Danach arbeiten alle nach demselben Ablauf — und ihr könnt messen, ob er besser wird.</p>
+            <div>
+              <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Auslöser</p>
+              <p style="margin:0;font:400 17px/1.6 Newsreader,serif;color:#33302A">Wenn der Prozess gewachsen ist und jeder ihn ein bisschen anders macht.</p>
+            </div>
+            <div>
+              <p style="margin:0 0 10px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Was auf dem Tisch liegt</p>
+              <ul style="margin:0;padding:0;list-style:none;display:grid;gap:8px">
+                <li style="display:grid;grid-template-columns:26px 1fr;gap:8px;font:400 17px/1.6 Newsreader,serif;color:#33302A"><span style="font:400 12px/1.9 'JetBrains Mono',monospace;color:#C0451B">01</span>Der Ist-Zustand sichtbar: wer macht welchen Schritt wie, und wo weichen sie voneinander ab</li>
+                <li style="display:grid;grid-template-columns:26px 1fr;gap:8px;font:400 17px/1.6 Newsreader,serif;color:#33302A"><span style="font:400 12px/1.9 'JetBrains Mono',monospace;color:#C0451B">02</span>Ein abgestimmter Soll-Prozess, von euren Leuten selbst mitgebaut</li>
+                <li style="display:grid;grid-template-columns:26px 1fr;gap:8px;font:400 17px/1.6 Newsreader,serif;color:#33302A"><span style="font:400 12px/1.9 'JetBrains Mono',monospace;color:#C0451B">03</span>Messpunkte, die im Prozess mitlaufen statt hinterher erhoben zu werden</li>
+              </ul>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;border-top:1px solid rgba(22,21,15,.14);padding-top:18px">
+              <div>
+                <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Euer Aufwand</p>
+                <p style="margin:0;font:400 16px/1.55 Newsreader,serif;color:#33302A">Ein Tag mit euren operativen Leuten, ganz, ohne Nebenher. Vorbereitung: keine.</p>
+              </div>
+              <div>
+                <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Nicht drin</p>
+                <p style="margin:0;font:400 16px/1.55 Newsreader,serif;color:#33302A">Keine Softwarekonfiguration, keine Schulung an einem Tool.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Säule 3 -->
+        <article style="margin-top:clamp(32px,4vw,56px);border-top:1px solid rgba(22,21,15,.2);padding-top:clamp(28px,3.4vw,44px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,4vw,56px)">
+          <div>
+            <p style="margin:0 0 12px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#C0451B">Säule 03</p>
+            <h3 style="margin:0;font-family:Archivo,sans-serif;font-weight:600;font-size:clamp(26px,3vw,38px);line-height:1.05;letter-spacing:-.03em">Build and Enable</h3>
+            <div style="margin-top:22px;display:grid;gap:14px">
+              <div>
+                <p style="margin:0 0 4px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Dauer</p>
+                <p style="margin:0;font:400 16px/1.5 Newsreader,serif;color:#33302A">feste Laufzeit mit vereinbartem Übergabedatum
+                  <span style="display:inline-block;margin-left:8px;font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:.1em;color:#C0451B;border:1px solid rgba(192,69,27,.45);padding:4px 6px">OFFEN</span>
+                </p>
+              </div>
+              <div>
+                <p style="margin:0 0 4px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Preis</p>
+                <p style="margin:0;font:400 16px/1.5 Newsreader,serif;color:#33302A">nach Aufwand</p>
+              </div>
+            </div>
+          </div>
+          <div style="display:grid;gap:22px">
+            <p style="margin:0;font:500 clamp(19px,2vw,23px)/1.35 Newsreader,serif;color:#16150F">Danach läuft KI im Prozess — und eure Leute bauen den nächsten Fall ohne mich.</p>
+            <div>
+              <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Auslöser</p>
+              <p style="margin:0;font:400 17px/1.6 Newsreader,serif;color:#33302A">Wenn der Prozess steht und KI jetzt hinein soll, ohne dass ihr dauerhaft an mir hängt.</p>
+            </div>
+            <div>
+              <p style="margin:0 0 10px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Was auf dem Tisch liegt</p>
+              <ul style="margin:0;padding:0;list-style:none;display:grid;gap:8px">
+                <li style="display:grid;grid-template-columns:26px 1fr;gap:8px;font:400 17px/1.6 Newsreader,serif;color:#33302A"><span style="font:400 12px/1.9 'JetBrains Mono',monospace;color:#C0451B">01</span>Der erste Anwendungsfall produktiv im Betrieb, mit gemessener Wirkung</li>
+                <li style="display:grid;grid-template-columns:26px 1fr;gap:8px;font:400 17px/1.6 Newsreader,serif;color:#33302A"><span style="font:400 12px/1.9 'JetBrains Mono',monospace;color:#C0451B">02</span>Menschen im Haus, die den nächsten Fall selbst durch die Pipeline bringen</li>
+                <li style="display:grid;grid-template-columns:26px 1fr;gap:8px;font:400 17px/1.6 Newsreader,serif;color:#33302A"><span style="font:400 12px/1.9 'JetBrains Mono',monospace;color:#C0451B">03</span>Eine Steuerung, die entscheidet, was als Nächstes drankommt — mit Sponsor und Owner je Vorhaben</li>
+              </ul>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;border-top:1px solid rgba(22,21,15,.14);padding-top:18px">
+              <div>
+                <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Euer Aufwand</p>
+                <p style="margin:0;font:400 16px/1.55 Newsreader,serif;color:#33302A">Wird vor Projektstart festgelegt: benannte Leute, feste Stunden pro Woche.
+                  <span style="display:inline-block;margin-left:8px;font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:.1em;color:#C0451B;border:1px solid rgba(192,69,27,.45);padding:4px 6px">OFFEN</span>
+                </p>
+              </div>
+              <div>
+                <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B675D">Nicht drin</p>
+                <p style="margin:0;font:400 16px/1.55 Newsreader,serif;color:#33302A">Kein Dauerbetrieb, kein Support-Vertrag. Das Übergabedatum steht vorher fest.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Säule 4 -->
+        <article style="margin-top:clamp(32px,4vw,56px);background:#16150F;color:#F1EEE7;padding:clamp(28px,3.6vw,52px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,4vw,56px)">
+          <div>
+            <p style="margin:0 0 12px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#E5852F">Säule 04</p>
+            <h3 style="margin:0;font-family:Archivo,sans-serif;font-weight:600;font-size:clamp(26px,3vw,38px);line-height:1.05;letter-spacing:-.03em;color:#F5F2EC">Golden Sherpa</h3>
+            <div style="margin-top:22px;display:grid;gap:14px">
+              <div>
+                <p style="margin:0 0 4px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#9A958A">Dauer</p>
+                <p style="margin:0;font:400 16px/1.5 Newsreader,serif;color:#DDD8CE">8 Monate, exklusiv</p>
+              </div>
+              <div>
+                <p style="margin:0 0 4px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#9A958A">Preis</p>
+                <p style="margin:0;font:700 clamp(22px,2.4vw,30px)/1.1 'JetBrains Mono',monospace;letter-spacing:-.02em;color:#F5F2EC">ab 120.000 €</p>
+              </div>
+              <div style="margin-top:6px;border-top:1px solid rgba(245,242,236,.18);padding-top:16px">
+                <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#E5852F">Ein Mandat gleichzeitig</p>
+                <p style="margin:0;font:400 16px/1.55 Newsreader,serif;color:#DDD8CE">Mehr geht nicht, und das ist kein Verkaufsargument, sondern Kapazität.</p>
+              </div>
+            </div>
+          </div>
+          <div style="display:grid;gap:22px">
+            <p style="margin:0;font:500 clamp(19px,2vw,23px)/1.35 Newsreader,serif;color:#F5F2EC">Ihr gebt die Transformation ab und bekommt sie verankert zurück.</p>
+            <div>
+              <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#9A958A">Auslöser</p>
+              <p style="margin:0;font:400 17px/1.6 Newsreader,serif;color:#DDD8CE">Wenn ihr die ganze Sache in eine Hand geben wollt, statt sie zu koordinieren.</p>
+            </div>
+            <div>
+              <p style="margin:0 0 10px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#9A958A">Was auf dem Tisch liegt</p>
+              <ul style="margin:0;padding:0;list-style:none;display:grid;gap:8px">
+                <li style="display:grid;grid-template-columns:26px 1fr;gap:8px;font:400 17px/1.6 Newsreader,serif;color:#DDD8CE"><span style="font:400 12px/1.9 'JetBrains Mono',monospace;color:#E5852F">01</span>Alles aus den Säulen 1 bis 3, über mehrere Prozesse hinweg</li>
+                <li style="display:grid;grid-template-columns:26px 1fr;gap:8px;font:400 17px/1.6 Newsreader,serif;color:#DDD8CE"><span style="font:400 12px/1.9 'JetBrains Mono',monospace;color:#E5852F">02</span>Eine Steuerung, die nach mir weiterläuft</li>
+                <li style="display:grid;grid-template-columns:26px 1fr;gap:8px;font:400 17px/1.6 Newsreader,serif;color:#DDD8CE"><span style="font:400 12px/1.9 'JetBrains Mono',monospace;color:#E5852F">03</span>Ein Ansprechpartner, durchgehend</li>
+              </ul>
+            </div>
+            <div style="border-top:1px solid rgba(245,242,236,.18);padding-top:18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+              <a href="#kontakt" style="font:700 13px/1 'JetBrains Mono',monospace;letter-spacing:.1em;text-transform:uppercase;background:#E5852F;color:#16150F;padding:17px 24px;border-radius:2px" style-hover="background:#F5F2EC">Verfügbarkeit klären</a>
+              <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:.1em;color:#E5852F;border:1px solid rgba(229,133,47,.45);padding:5px 7px">EUER AUFWAND · NICHT DRIN — OFFEN</span>
+            </div>
+          </div>
+        </article>
+
+        <p style="margin:clamp(32px,4vw,52px) 0 0;font:400 clamp(17px,1.8vw,20px)/1.5 Newsreader,serif;color:#33302A">Ich arbeite remote aus Berlin, vor Ort im DACH-Raum, wenn es der Sache dient.</p>
+      </div>
+    </section>
+
+    <!-- 06 METHODE -->
+    <section id="methode" style="border-top:1px solid rgba(22,21,15,.14)">
+      <div style="max-width:1180px;margin:0 auto;padding:clamp(64px,9vw,120px) clamp(20px,5vw,56px)">
+        <p style="margin:0 0 18px;font:500 12px/1.4 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#6B675D">Methode</p>
+        <h2 style="margin:0;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(32px,4.6vw,60px);line-height:1;letter-spacing:-.035em">Wie ich arbeite</h2>
+        <div style="margin-top:clamp(32px,4.4vw,60px);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:rgba(22,21,15,.14);border-top:1px solid rgba(22,21,15,.14);border-bottom:1px solid rgba(22,21,15,.14)">
+          <div style="background:#F5F2EC;padding:clamp(22px,2.6vw,32px)">
+            <p style="margin:0 0 14px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;color:#C0451B">01</p>
+            <h3 style="margin:0 0 10px;font-family:Archivo,sans-serif;font-weight:600;font-size:20px;line-height:1.2;letter-spacing:-.02em">Vom Ziel her denken</h3>
+            <p style="margin:0;font:400 16px/1.55 Newsreader,serif;color:#33302A">Und vorher festlegen, woran wir Erfolg messen.</p>
+          </div>
+          <div style="background:#F5F2EC;padding:clamp(22px,2.6vw,32px)">
+            <p style="margin:0 0 14px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;color:#C0451B">02</p>
+            <h3 style="margin:0 0 10px;font-family:Archivo,sans-serif;font-weight:600;font-size:20px;line-height:1.2;letter-spacing:-.02em">Pioniere fördern statt Breitenschulung</h3>
+            <p style="margin:0;font:400 16px/1.55 Newsreader,serif;color:#33302A">Die Willigen bringen die Zögernden mit, nicht umgekehrt.</p>
+          </div>
+          <div style="background:#F5F2EC;padding:clamp(22px,2.6vw,32px)">
+            <p style="margin:0 0 14px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;color:#C0451B">03</p>
+            <h3 style="margin:0 0 10px;font-family:Archivo,sans-serif;font-weight:600;font-size:20px;line-height:1.2;letter-spacing:-.02em">Systemdesign vor Kulturanalyse</h3>
+            <p style="margin:0;font:400 16px/1.55 Newsreader,serif;color:#33302A">Verhalten folgt Struktur, nicht Workshops.</p>
+          </div>
+          <div style="background:#F5F2EC;padding:clamp(22px,2.6vw,32px)">
+            <p style="margin:0 0 14px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;color:#C0451B">04</p>
+            <h3 style="margin:0 0 10px;font-family:Archivo,sans-serif;font-weight:600;font-size:20px;line-height:1.2;letter-spacing:-.02em">Datenbasiert entscheiden</h3>
+            <p style="margin:0;font:400 16px/1.55 Newsreader,serif;color:#33302A">Auch in der Organisationsentwicklung.</p>
+          </div>
+        </div>
+        <p style="margin:clamp(32px,4vw,56px) auto 0;max-width:32ch;text-align:center;font:400 clamp(20px,2.4vw,29px)/1.35 Newsreader,serif;letter-spacing:-.01em;color:#16150F">Darunter liegt eine einfache Sache: Vertrauen ist die Währung jeder Veränderung. Systeme geben Halt, aber Menschen gehen nur mit, wenn sie sich gesehen fühlen.</p>
+      </div>
+    </section>
+
+    <!-- 07 ÜBER MICH -->
+    <section id="ueber" style="border-top:1px solid rgba(22,21,15,.14);background:#EFEBE3">
+      <div style="max-width:1180px;margin:0 auto;padding:clamp(64px,9vw,120px) clamp(20px,5vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(28px,4.5vw,72px);align-items:start">
+        <div style="position:relative;width:100%;aspect-ratio:4/5;border:1px solid rgba(22,21,15,.16)">
+          <img src="assets/portrait-jonas.png" alt="Porträt Jonas Zimmermann" style="width:100%;height:100%;object-fit:cover" />
+        </div>
+        <div>
+          <p style="margin:0 0 18px;font:500 12px/1.4 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#6B675D">Über mich</p>
+          <h2 style="margin:0;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(30px,4.2vw,56px);line-height:1;letter-spacing:-.035em">Jonas Zimmermann</h2>
+          <div style="margin-top:clamp(26px,3vw,40px);display:grid;gap:0">
+            <div style="border-top:1px solid rgba(22,21,15,.16);padding:18px 0">
+              <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#C0451B">Systemblick</p>
+              <p style="margin:0;font:400 17px/1.6 Newsreader,serif;color:#33302A">Zehn Jahre als Wirtschaftsingenieur und Organisationsentwickler, mit Blick für Prozesse und Strukturen.</p>
+            </div>
+            <div style="border-top:1px solid rgba(22,21,15,.16);padding:18px 0">
+              <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#C0451B">Menschengespür</p>
+              <p style="margin:0;font:400 17px/1.6 Newsreader,serif;color:#33302A">Acht Jahre Arbeit mit Menschen, von Gruppendynamik bis Führungskräfte-Coaching.</p>
+            </div>
+            <div style="border-top:1px solid rgba(22,21,15,.16);border-bottom:1px solid rgba(22,21,15,.16);padding:18px 0">
+              <p style="margin:0 0 6px;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#C0451B">Sicher auf C-Level</p>
+              <p style="margin:0;font:400 17px/1.6 Newsreader,serif;color:#33302A">Sponsoren gewinnen, Vorstandsbeauftragungen erwirken, Business Cases in Entscheider-Sprache übersetzen.</p>
+            </div>
+          </div>
+          <p style="margin:22px 0 0;font:400 12px/1.9 'JetBrains Mono',monospace;letter-spacing:.06em;color:#6B675D">Unite / Mercateo · Partake Beratung · Cagebot · Diplom-Wirtschaftsingenieur, BTU Cottbus</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 NICHT DER RICHTIGE -->
+    <section style="border-top:1px solid rgba(22,21,15,.14)">
+      <div style="max-width:1180px;margin:0 auto;padding:clamp(56px,7.5vw,100px) clamp(20px,5vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,4vw,56px)">
+        <h2 style="margin:0;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(26px,3.4vw,44px);line-height:1.02;letter-spacing:-.03em;max-width:16ch">Wofür ich nicht der Richtige bin</h2>
+        <ul style="margin:0;padding:0;list-style:none;display:grid;gap:0">
+          <li style="display:grid;grid-template-columns:34px 1fr;gap:8px;border-top:1px solid rgba(22,21,15,.14);padding:16px 0;font:400 17px/1.6 Newsreader,serif;color:#33302A"><span style="font:400 15px/1.75 'JetBrains Mono',monospace;color:#C0451B">✕</span>Wenn ihr ein Tool eingeführt haben wollt und sonst nichts ändern.</li>
+          <li style="display:grid;grid-template-columns:34px 1fr;gap:8px;border-top:1px solid rgba(22,21,15,.14);padding:16px 0;font:400 17px/1.6 Newsreader,serif;color:#33302A"><span style="font:400 15px/1.75 'JetBrains Mono',monospace;color:#C0451B">✕</span>Wenn niemand aus der Geschäftsführung Zeit hat, Sponsor zu sein.</li>
+          <li style="display:grid;grid-template-columns:34px 1fr;gap:8px;border-top:1px solid rgba(22,21,15,.14);padding:16px 0;font:400 17px/1.6 Newsreader,serif;color:#33302A"><span style="font:400 15px/1.75 'JetBrains Mono',monospace;color:#C0451B">✕</span>Wenn das Ergebnis vorher feststeht und nur noch belegt werden soll.</li>
+          <li style="display:grid;grid-template-columns:34px 1fr;gap:8px;border-top:1px solid rgba(22,21,15,.14);border-bottom:1px solid rgba(22,21,15,.14);padding:16px 0;font:400 17px/1.6 Newsreader,serif;color:#33302A"><span style="font:400 15px/1.75 'JetBrains Mono',monospace;color:#C0451B">✕</span>Wenn ihr eine Präsentation braucht und keine Veränderung.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 09 FAQ -->
+    <section id="faq" style="border-top:1px solid rgba(22,21,15,.14);background:#EFEBE3">
+      <div style="max-width:1180px;margin:0 auto;padding:clamp(64px,9vw,120px) clamp(20px,5vw,56px)">
+        <p style="margin:0 0 18px;font:500 12px/1.4 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#6B675D">Häufige Fragen</p>
+        <h2 style="margin:0 0 clamp(32px,4vw,54px);font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(30px,4.2vw,54px);line-height:1;letter-spacing:-.035em">Klartext vorab</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));column-gap:clamp(28px,4vw,64px);row-gap:0">
+          <div style="border-top:1px solid rgba(22,21,15,.16);padding:20px 0">
+            <h3 style="margin:0 0 10px;font-family:Archivo,sans-serif;font-weight:600;font-size:18px;line-height:1.25;letter-spacing:-.015em">Was passiert im Erstgespräch, und was kostet es?</h3>
+            <p style="margin:0;font:400 16px/1.6 Newsreader,serif;color:#33302A">45 Minuten, kostenlos, per Video. Ihr schildert die Lage, ich sage euch, ob ich der Richtige bin. Wenn nicht, sage ich das im Gespräch und nicht in einem Angebot.</p>
+          </div>
+          <div style="border-top:1px solid rgba(22,21,15,.16);padding:20px 0">
+            <h3 style="margin:0 0 10px;font-family:Archivo,sans-serif;font-weight:600;font-size:18px;line-height:1.25;letter-spacing:-.015em">Wie schnell sehen wir etwas Messbares?</h3>
+            <p style="margin:0;font:400 16px/1.6 Newsreader,serif;color:#33302A">Nach North Star habt ihr nach einem Tag eine Entscheidung. Nach The Process steht in rund drei Wochen ein Soll-Prozess mit Messpunkten. Der erste messbare Effekt aus einem KI-Anwendungsfall kommt in der Regel im Quartal danach.</p>
+          </div>
+          <div style="border-top:1px solid rgba(22,21,15,.16);padding:20px 0">
+            <h3 style="margin:0 0 10px;font-family:Archivo,sans-serif;font-weight:600;font-size:18px;line-height:1.25;letter-spacing:-.015em">Warum fangt ihr mit Prozessen an, wenn wir KI wollen?</h3>
+            <p style="margin:0;font:400 16px/1.6 Newsreader,serif;color:#33302A">Weil KI einen schlechten Prozess nicht repariert, sondern beschleunigt. Bei einem Kunden stand eine ERP-Umstellung an: Was am Tag der Umstellung an Abläufen drin ist, ist der Ablauf für die nächsten Jahre. Bei KI ist es dasselbe Prinzip. Der Prozessteil ist kein Umweg, er ist die Bedingung.</p>
+          </div>
+          <div style="border-top:1px solid rgba(22,21,15,.16);padding:20px 0">
+            <h3 style="margin:0 0 10px;font-family:Archivo,sans-serif;font-weight:600;font-size:18px;line-height:1.25;letter-spacing:-.015em">Wer muss bei euch mitmachen, damit das funktioniert?</h3>
+            <p style="margin:0;font:400 16px/1.6 Newsreader,serif;color:#33302A">Eine Person aus der Geschäftsführung als Sponsor, die entscheiden darf. Und die Leute, die den Prozess tatsächlich ausführen — nicht ihre Vorgesetzten. Ohne diese beiden lasse ich es lieber.</p>
+          </div>
+          <div style="border-top:1px solid rgba(22,21,15,.16);padding:20px 0">
+            <h3 style="margin:0 0 10px;font-family:Archivo,sans-serif;font-weight:600;font-size:18px;line-height:1.25;letter-spacing:-.015em">Was, wenn wir nach der ersten Stufe aufhören wollen?</h3>
+            <p style="margin:0;font:400 16px/1.6 Newsreader,serif;color:#33302A">Dann hört ihr auf. Jede Säule hat ein eigenes Ergebnis und einen eigenen Preis. Es gibt kein Abo und keine Verpflichtung auf die nächste Stufe.</p>
+          </div>
+          <div style="border-top:1px solid rgba(22,21,15,.16);padding:20px 0">
+            <h3 style="margin:0 0 10px;font-family:Archivo,sans-serif;font-weight:600;font-size:18px;line-height:1.25;letter-spacing:-.015em">Brauchen wir eigene KI-Infrastruktur?</h3>
+            <p style="margin:0;display:flex;gap:10px;flex-wrap:wrap;align-items:baseline;font:400 16px/1.6 Newsreader,serif;color:#33302A">Antwort folgt.
+              <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:.1em;color:#C0451B;border:1px solid rgba(192,69,27,.45);padding:4px 6px">OFFEN</span>
+            </p>
+          </div>
+          <div style="border-top:1px solid rgba(22,21,15,.16);border-bottom:1px solid rgba(22,21,15,.16);padding:20px 0">
+            <h3 style="margin:0 0 10px;font-family:Archivo,sans-serif;font-weight:600;font-size:18px;line-height:1.25;letter-spacing:-.015em">Was ist mit Datenschutz und EU AI Act?</h3>
+            <p style="margin:0;display:flex;gap:10px;flex-wrap:wrap;align-items:baseline;font:400 16px/1.6 Newsreader,serif;color:#33302A">Antwort folgt.
+              <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:.1em;color:#C0451B;border:1px solid rgba(192,69,27,.45);padding:4px 6px">OFFEN</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 KONTAKT -->
+    <section id="kontakt" style="background:#16150F;color:#F5F2EC;position:relative;overflow:hidden">
+      <img src="assets/sherpa-mark.png" alt="" style="position:absolute;right:clamp(-40px,-2vw,20px);top:50%;transform:translateY(-50%);width:clamp(260px,30vw,460px);height:auto;object-fit:contain;filter:invert(1) brightness(1.6);opacity:.9;pointer-events:none" />
+      <div style="max-width:1180px;margin:0 auto;padding:clamp(72px,10vw,140px) clamp(20px,5vw,56px);position:relative;z-index:1">
+        <h2 style="margin:0;max-width:14ch;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(38px,7vw,96px);line-height:.96;letter-spacing:-.04em;color:#F5F2EC">Kommt vor die Welle.</h2>
+        <p style="margin:clamp(20px,2.6vw,32px) 0 0;max-width:40ch;font:400 clamp(18px,1.8vw,22px)/1.5 Newsreader,serif;color:#C9C4B9">45 Minuten, unverbindlich. Danach wisst ihr, ob wir zusammenpassen.</p>
+        <div style="margin-top:clamp(28px,3.6vw,44px);display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px">
+          <a href="#kontakt" style="font:700 14px/1 'JetBrains Mono',monospace;letter-spacing:.1em;text-transform:uppercase;background:#C0451B;color:#F5F2EC;padding:22px 30px;border-radius:2px" style-hover="background:#F5F2EC;color:#16150F">Erstgespräch buchen →</a>
+          <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:.1em;color:#E5852F;border:1px solid rgba(229,133,47,.45);padding:5px 7px">KALENDER-URL OFFEN</span>
+        </div>
+        <p style="margin:clamp(24px,3vw,36px) 0 0;font:400 13px/1.7 'JetBrains Mono',monospace;letter-spacing:.04em;color:#9A958A">Lieber schreiben? <a href="mailto:office@sherpacoaching.de" style="color:#F5F2EC;border-bottom:1px solid rgba(245,242,236,.35)" style-hover="color:#E5852F;border-bottom-color:#E5852F">office@sherpacoaching.de</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="background:#16150F;border-top:1px solid rgba(245,242,236,.14)">
+    <div style="max-width:1180px;margin:0 auto;padding:26px clamp(20px,5vw,56px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <img src="assets/sherpa-mark.png" alt="" style="width:22px;height:22px;object-fit:contain;filter:invert(1) brightness(1.6)" />
+        <p style="margin:0;font:500 12px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#9A958A">Sherpacoaching · 2026</p>
+      </div>
+      <nav style="display:flex;flex-wrap:wrap;gap:22px">
+        <a href="impressum.html" style="font:400 12px/1 'JetBrains Mono',monospace;letter-spacing:.08em;color:#9A958A" style-hover="color:#E5852F">Impressum</a>
+        <a href="datenschutz.html" style="font:400 12px/1 'JetBrains Mono',monospace;letter-spacing:.08em;color:#9A958A" style-hover="color:#E5852F">Datenschutz</a>
+        <a href="https://www.linkedin.com/" style="font:400 12px/1 'JetBrains Mono',monospace;letter-spacing:.08em;color:#9A958A" style-hover="color:#E5852F">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var nav = document.getElementById('mainNav');
+    if (!nav) return;
+    var links = Array.prototype.slice.call(nav.querySelectorAll('[data-spy]'));
+    var targets = links
+      .map(function (l) { return { link: l, el: document.getElementById(l.getAttribute('data-spy')) }; })
+      .filter(function (t) { return t.el; });
+    if (!targets.length) return;
+    function paint(activeId) {
+      targets.forEach(function (t) {
+        var on = t.el.id === activeId;
+        t.link.style.color = on ? '#C0451B' : '#4A4740';
+        t.link.style.fontWeight = on ? '700' : '500';
+      });
+    }
+    var io = new IntersectionObserver(function (entries) {
+      var visible = entries.filter(function (e) { return e.isIntersecting; });
+      if (visible.length) {
+        visible.sort(function (a, b) { return b.intersectionRatio - a.intersectionRatio; });
+        paint(visible[0].target.id);
+      }
+    }, { rootMargin: '-40% 0px -50% 0px', threshold: [0, 0.2, 0.5, 1] });
+    targets.forEach(function (t) { io.observe(t.el); });
+  });
+</script>
+</body>
+</html>
