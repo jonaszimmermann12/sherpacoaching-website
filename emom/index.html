@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#101312">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>EMOM Uhr</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&display=swap">
+<style>
+  :root { color-scheme: dark; --bg:#101312; --fg:#e8efe9; --dim:#6f7d74; --go:#3ddc84; --warn:#ffb020; }
+  html, body { height:100%; }
+  body { background:var(--bg); color:var(--fg); margin:0; padding-inline:16px;
+    font-family:"Big Shoulders Display", system-ui, sans-serif;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px; }
+  #round { font-size:28px; letter-spacing:.12em; text-transform:uppercase; color:var(--dim); }
+  #sec { font-size:min(52vw, 280px); font-weight:900; line-height:.85; font-variant-numeric:tabular-nums; transition:color .15s; }
+  #sec.warn { color:var(--warn); }
+  #sec.go { color:var(--go); }
+  button { font:inherit; font-size:30px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+    background:var(--go); color:#08110c; border:0; border-radius:999px; padding:14px 56px; cursor:pointer; }
+  button.stop { background:transparent; color:var(--fg); box-shadow:inset 0 0 0 2px var(--dim); }
+  button:focus-visible { outline:3px solid var(--fg); outline-offset:4px; }
+  label { display:flex; align-items:center; gap:12px; font-size:20px; color:var(--dim); letter-spacing:.08em; text-transform:uppercase; }
+  input[type=range] { width:180px; accent-color:var(--go); }
+</style>
+</head>
+<body>
+
+<div id="round">Bereit</div>
+<div id="sec">60</div>
+<button id="btn">Start</button>
+<label for="vol">Laut <input id="vol" type="range" min="0" max="1" step="0.05" value="0.7"></label>
+
+<script>
+const secEl = document.getElementById('sec'), roundEl = document.getElementById('round'),
+      btn = document.getElementById('btn'), vol = document.getElementById('vol');
+let ctx, master, t0 = null, planned = 0, timer = null, wake;
+
+function beep(at, freq, dur) {
+  const o = ctx.createOscillator(), g = ctx.createGain();
+  o.type = 'square'; o.frequency.value = freq;
+  g.gain.setValueAtTime(0.0001, at);
+  g.gain.exponentialRampToValueAtTime(0.4, at + 0.01);
+  g.gain.setValueAtTime(0.4, at + dur - 0.03);
+  g.gain.exponentialRampToValueAtTime(0.0001, at + dur);
+  o.connect(g).connect(master); o.start(at); o.stop(at + dur + 0.02);
+}
+
+// Töne werden bis zu 2 Stunden im Voraus auf der Audio-Uhr geplant. Sie kommen dadurch
+// auch, wenn ein anderes Fenster aktiv ist und die Seite gedrosselt wird.
+function schedule() {
+  const horizon = ctx.currentTime + 7200;
+  while (t0 + 60 * (planned + 1) < horizon) {
+    const m = t0 + 60 * ++planned;
+    beep(m - 2, 880, 0.12);                   // Warnung 2 s vor der Minute
+    beep(m, 1320, 0.6);                       // Neues Set
+  }
+}
+
+function tick() {
+  if (ctx.currentTime + 3600 > t0 + 60 * planned) schedule();
+  const el = Math.max(0, ctx.currentTime - t0), left = 60 - Math.floor(el % 60);
+  secEl.textContent = left;
+  roundEl.textContent = 'Set ' + (Math.floor(el / 60) + 1);
+  secEl.className = left <= 2 ? 'warn' : (el % 60 < 1 ? 'go' : '');
+}
+
+async function start() {
+  ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+  await ctx.resume();
+  master = master || ctx.createGain(); master.connect(ctx.destination);
+  master.gain.value = vol.value;
+  t0 = ctx.currentTime + 0.05; planned = 0;
+  beep(t0, 1320, 0.6);                        // Startsignal
+  schedule();
+  timer = setInterval(tick, 100); tick();
+  btn.textContent = 'Stopp'; btn.className = 'stop';
+  try { wake = await navigator.wakeLock.request('screen'); } catch (e) {}
+}
+
+function stop() {
+  clearInterval(timer); timer = null;
+  master.disconnect(); master = null;         // schneidet geplante Töne ab
+  secEl.textContent = '60'; secEl.className = ''; roundEl.textContent = 'Bereit';
+  btn.textContent = 'Start'; btn.className = '';
+  try { wake && wake.release(); } catch (e) {} wake = null;
+}
+
+btn.onclick = () => (timer ? stop() : start());
+vol.oninput = () => { if (master) master.gain.value = vol.value; };
+</script>
+</body>
+</html>
