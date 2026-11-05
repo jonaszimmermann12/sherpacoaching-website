@@ -34,6 +34,9 @@
   h1 { margin: 0; font-family: Archivo, sans-serif; font-weight: 700; font-size: clamp(34px, 4.6vw, 60px); line-height: 1; letter-spacing: -.035em; text-wrap: balance; }
   .sub { margin: clamp(18px, 2.4vw, 26px) 0 0; font: 400 clamp(19px, 2vw, 24px)/1.35 Newsreader, serif; }
   .sub span { box-shadow: inset 0 -.36em 0 rgba(229,133,47,.4); }
+  .lines { list-style: none; margin: clamp(26px, 3vw, 36px) 0 0; padding: 0; display: grid; }
+  .lines li { display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: baseline; padding: 12px 0; border-top: 1px solid rgba(22,21,15,.14); font: 400 17px/1.45 Newsreader, serif; color: #2A2822; }
+  .lines li span { font: 700 13px/1 'JetBrains Mono', monospace; letter-spacing: .04em; color: #E5852F; }
   .meta { margin: clamp(26px, 3vw, 36px) 0 0; padding-top: 18px; border-top: 1px solid rgba(22,21,15,.14); font: 400 12px/1.7 'JetBrains Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: #4A4740; }
   footer { background: #16150F; }
   footer .wrap { padding-top: 32px; padding-bottom: 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; }
@@ -63,6 +66,12 @@
         <span class="num">#01</span>
         <h1>Session Number One.</h1>
         <p class="sub"><span>Ich auf dem Weg zum KI-Profi.</span></p>
+        <ol class="lines">
+          <li><span>01</span>Erst neugierig. Dann richtig gut.</li>
+          <li><span>02</span>Prompt für Prompt, Session für Session.</li>
+          <li><span>03</span>Vom Ausprobieren zum Können.</li>
+          <li><span>04</span>Battlescars statt Consultant Slop, ab heute auch mit KI.</li>
+        </ol>
         <p class="meta">AI-Mentoring · Session 1 · 05.11.2026</p>
       </div>
     </div>
